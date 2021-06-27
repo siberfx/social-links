@@ -53,6 +53,7 @@ class BasicTest extends TestCase
         $this->assertEquals($page->email->shareUrl, 'mailto:?subject=Page%20title&body=Extended%20page%20description%20%26%0Ahttp%3A%2F%2Fmypage.com');
         $this->assertEquals($page->evernote->shareUrl, 'https://www.evernote.com/clip.action?url=http%3A%2F%2Fmypage.com&title=Page+title&body=Extended+page+description+%26');
         $this->assertEquals($page->facebook->shareUrl, 'https://www.facebook.com/sharer/sharer.php?display=popup&redirect_uri=http%3A%2F%2Fwww.facebook.com&u=http%3A%2F%2Fmypage.com&t=Page+title');
+        $this->assertEquals($page->line->shareUrl, 'https://social-plugins.line.me/lineit/share?url=http%3A%2F%2Fmypage.com');
         $this->assertEquals($page->linkedin->shareUrl, 'https://www.linkedin.com/shareArticle?mini=1&url=http%3A%2F%2Fmypage.com&title=Page+title&summary=Extended+page+description+%26');
         $this->assertEquals($page->liveinternet->shareUrl, 'http://www.liveinternet.ru/journal_post.php?action=n_add&cnurl=http%3A%2F%2Fmypage.com&cntitle=Page+title');
         $this->assertEquals($page->livejournal->shareUrl, 'http://www.livejournal.com/update.bml?event=%3Ca+href%3D%22http%3A%2F%2Fmypage.com%22%3EPage+title%3C%2Fa%3E&subject=Page+title');
@@ -69,7 +70,7 @@ class BasicTest extends TestCase
         $this->assertEquals($page->tumblr->shareUrl, 'https://www.tumblr.com/share?v=3&u=http%3A%2F%2Fmypage.com&t=Page+title');
         $this->assertEquals($page->twitter->shareUrl, 'https://twitter.com/intent/tweet?text=Page+title+via+%40twitterUser&url=http%3A%2F%2Fmypage.com');
         $this->assertEquals($page->vk->shareUrl, 'http://vk.com/share.php?url=http%3A%2F%2Fmypage.com&title=Page+title&image=http%3A%2F%2Fmypage.com%2Fimage.png');
-        $this->assertEquals($page->whatsapp->shareUrl, 'whatsapp://send?text=Page+title+http%3A%2F%2Fmypage.com');
+        $this->assertEquals($page->whatsapp->shareUrl, 'https://api.whatsapp.com/send?text=Page+title+http%3A%2F%2Fmypage.com');
         $this->assertEquals($page->telegram->shareUrl, 'tg://msg?text=Page+title+http%3A%2F%2Fmypage.com');
         $this->assertEquals($page->xing->shareUrl, 'https://www.xing.com/spi/shares/new?url=http%3A%2F%2Fmypage.com');
         $this->assertEquals($page->viadeo->shareUrl, 'https://partners.viadeo.com/share?url=http%3A%2F%2Fmypage.com&comment=Page+title');

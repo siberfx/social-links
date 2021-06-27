@@ -71,6 +71,7 @@ digg            |  -
 email           |  -
 evernote        |  -
 facebook        | YES
+line            |  -
 linkedin        | YES
 liveinternet    |  -
 livejournal     |  -
@@ -125,10 +126,6 @@ $card->addMeta('author', '@the_author'); //<meta property="twitter:author" conte
 ## Usage in Symfony
 
 There is a Symfony bundle available here: https://github.com/astina/AstinaSocialLinksBundle
-
-## Online demo
-
-http://oscarotero.com/social-links/demo/index.php
 
 ## Contributions
 
